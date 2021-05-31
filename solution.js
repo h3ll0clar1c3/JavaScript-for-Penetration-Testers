@@ -78,6 +78,22 @@ document.forms[0].parentNode.removeChild(document.forms[0]);
 
 function CaughtClick () 
 {
+	alert("You Clicked");
+
+}
+
+document.body.addEventListener('click', CaughtClick, true);
+
+</script>
+
+
+
+
+
+<script>
+
+function CaughtClick () 
+{
 	location.href = "http://PentesterAcademy.com";
 
 }
