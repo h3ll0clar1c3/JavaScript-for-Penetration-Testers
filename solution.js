@@ -62,7 +62,7 @@ document.forms[0].action = "http://localhost/";
 
 <script>
 
-var input = document.createElement("h2 ");
+var input = document.createElement("h2");
 
 input.innerHTML = "Website is Down. Please visit SecurityTube.net";
 
