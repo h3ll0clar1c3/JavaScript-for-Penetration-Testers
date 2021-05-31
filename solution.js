@@ -112,6 +112,14 @@ document.forms[0].onsubmit = function demo ()
 }
 	
 
-* Solution 9:
+* Solution 9: Include External JS
 
 <script src="http://demofilespa.s3.amazonaws.com/jfptest.js"></script>
+
+
+* Solution 10: Include External JS using JS
+
+var newtag = document.createElement("script");
+newtag.type = "text/javascript";
+newtag.src = "http://demofilespa.s3.amazonaws.com/jfptest.js";
+document.body.appendChild(newtag);
