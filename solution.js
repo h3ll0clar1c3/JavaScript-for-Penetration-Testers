@@ -78,24 +78,14 @@ document.forms[0].parentNode.removeChild(document.forms[0]);
 
 function CaughtClick () 
 {
-	alert("You Clicked");
-}
-
-document.body.addEventListener('click', CaughtClick, true);
-
-</script>
-
-
-
-
-
-<script>
-
-function CaughtClick () 
-{
 	location.href = "https://www.PentesterAcademy.com";
 }
 
 document.body.addEventListener('click', CaughtClick, true);
 
 </script>
+
+
+* Solution 7: Keystroke Logging
+
+
