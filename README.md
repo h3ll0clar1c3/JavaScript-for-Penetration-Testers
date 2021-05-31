@@ -1,2 +1,2 @@
-# JavaScript_for_Penetration_Testers
+# JavaScript-for-Penetration-Testers
 JavaScript for Penetration Testers
