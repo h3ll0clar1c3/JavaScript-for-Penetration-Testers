@@ -93,7 +93,7 @@ document.body.addEventListener('click', CaughtClick, true);
 
 function CaughtClick () 
 {
-	location.href = "https://www.PentesterAcademy.com";
+	location.href = "www.PentesterAcademy.com";
 }
 
 document.body.addEventListener('click', CaughtClick, true);
