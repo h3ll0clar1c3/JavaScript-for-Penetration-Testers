@@ -18,7 +18,6 @@ for  (i=0; i < links.length; i++)
 {
   links[i].href = "http://PentesterAcademy.com/topics";
   links[i].innerHTML = "Link Modified";
-  
 }
 
 </script>
