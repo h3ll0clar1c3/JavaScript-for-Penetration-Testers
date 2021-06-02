@@ -151,7 +151,7 @@ window.setTimeout(function()
 </script>
 
 
-* Solution 13: Posting with XML HTTP Request
+* Solution 13: Posting with XML Http Request
 
 <script>
 
@@ -170,7 +170,7 @@ window.setTimeout(function()
 </script>
 
 
-* Solution 14: Fetching Data with XML HTTP Request
+* Solution 14: Fetching Data with XML Http Request
 
 <script>
 
