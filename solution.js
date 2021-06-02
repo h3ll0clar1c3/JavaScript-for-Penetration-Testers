@@ -123,3 +123,12 @@ var newtag = document.createElement("script");
 newtag.type = "text/javascript";
 newtag.src = "http://demofilespa.s3.amazonaws.com/jfptest.js";
 document.body.appendChild(newtag);
+
+
+* Solution 11: 
+
+<script>
+	
+document.getElementsByTagName("img")[0].src = "https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png"
+
+</script>
