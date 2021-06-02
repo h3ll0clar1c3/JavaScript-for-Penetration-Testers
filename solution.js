@@ -169,3 +169,23 @@ window.setTimeout(function()
 	
 </script>
 
+
+* Solution 14: Fetching Data with XML HTTP Request
+
+<script>
+
+var req = new XMLHTTPRequest();
+req.onreadystatechange = function ()
+
+{
+	if (req.readyState == 4 && req.status == 200)
+	
+	{
+		document.getElementById("result").innerHTML = req.responseText;
+	}
+};
+
+req.open("GET", "/lab/webapp/jfp/14/email", true);
+req.send();
+	
+</script>
